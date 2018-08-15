@@ -1,0 +1,209 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+header {
+  height: 10vh;
+}
+
+#page {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#page.fade-out {
+  opacity: 0;
+  transition: none;
+}
+
+.title {
+  display: inline-block;
+  padding-left: 2.8rem;
+  padding-top: 1rem;
+  font-weight: 300;
+  font-size: 2.3rem;
+}
+
+.header-menu-container {
+  display: inline-block;
+  float: right;
+  padding-right: 5rem;
+  padding-top: 2.5rem;
+}
+
+.header-menu {
+  padding-left: 0;
+}
+
+.header-menu li {
+  display: inline-block;
+  padding-left: 2.5rem;
+  font-size: 1.4rem;
+  color: #E8E8E8;
+  transition: 0.3s;
+}
+
+.header-menu li:hover {
+  color: black;
+}
+
+
+
+.image-container {
+  position: fixed;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-image: url(dive.gif);
+  height: 70vh;
+  width: 84vw;
+}
+
+/* <---------------------works----------------------> */
+
+.works-container {
+  font-size: 0;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 84vw;
+  margin: auto;
+}
+
+.work-container {
+  position: relative;
+  height: 20vh;
+  width: 16vw;
+  display: inline-block;
+  margin: 2.5vw;
+  /* border: none !important; */
+  text-align: center;
+}
+
+.work-container-overlay {
+  height: 100%;
+  width: 100%;
+  /* padding: 15%; */
+  background-color: rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+/* .work-title-container{
+  z-index: 1000;
+} */
+
+.work-descr-container {
+  display: none;
+}
+
+.work-title-container, .work-descr-container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .work-title-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+} */
+
+.work-descr-container p {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  padding: 0 2.5vw;
+  text-transform: uppercase;
+}
+
+#dive {
+  background-image: url(dive.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+#jimmio {
+  background-image: url(jimmio.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#fetop {
+  background-image: url(fetop.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bubbleway {
+  background-image: url(bubbleway.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#conservatory {
+  background-image: url(conservatory.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+#study {
+  background-image: url(study.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+#time {
+  background-image: url(time.jpg);
+  background-size: cover;
+}
+
+#book {
+  background-image: url(book.jpg);
+  background-size: cover;
+}
+
+/* <---------------------about----------------------> */
+
+.about-container {
+  position: fixed;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45vw;
+  height: auto;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+/* <---------------------contact----------------------> */
+
+.contact-container {
+  position: fixed;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fab, .far {
+  font-size: 4rem;
+  padding: 1.5vw;
+  color: #E8E8E8;
+  transition: 0.3s;
+}
+
+.fab:hover, .far:hover {
+  color: black;
+}
