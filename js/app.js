@@ -17,4 +17,20 @@ $(function() {
 
   // $(".page").fadeIn();
 
+  $(".cross, .mobile-menu").hide();
+  $( ".hamburger" ).click(function() {
+    $( ".mobile-menu" ).slideToggle( "fast", function() {
+    $( ".hamburger" ).hide();
+    $( ".cross" ).show();
+    });
+  });
+
+  $( ".cross" ).click(function() {
+    $( ".mobile-menu" ).slideToggle( "fast", function() {
+    $( ".cross" ).hide();
+    $( ".hamburger" ).show();
+    });
+  });
+
+
 });

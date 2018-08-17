@@ -12,10 +12,6 @@ a {
     color: inherit;
 }
 
-header {
-  height: 10vh;
-}
-
 #page {
   opacity: 1;
   transition: 0.5s;
@@ -28,8 +24,9 @@ header {
 
 .title {
   display: inline-block;
-  padding-left: 2.8rem;
-  padding-top: 1rem;
+  position: absolute;
+  top: 2vh;
+  left: 8vw;
   font-weight: 300;
   font-size: 2.3rem;
 }
@@ -57,17 +54,65 @@ header {
   color: black;
 }
 
-
-
-.image-container {
-  position: fixed;
+.image-wrapper {
+  position: absolute;
   top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-size: cover;
-  background-image: url(dive.gif);
   height: 70vh;
   width: 84vw;
+}
+
+.index-image {
+  background-image: url(dive.gif);
+  background-size: cover;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .image-wrapper {
+    width: 78vw;
+  }
+
+  .header-menu-container {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline;
+    font-size: 2rem;
+    position: absolute;
+    top: 5vh;
+    left: 85vw;
+    color: #E8E8E8;
+    transition: 0.3s;
+  }
+
+  .hamburger:hover {
+    color: black;
+  }
+
+  .cross {
+    font-size: 2rem;
+    position: absolute;
+    top: 5vh;
+    left: 85vw;
+    color: black;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 8vh;
+    right: 9vw;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    z-index: 100;
+    text-align: right;
+
+  }
 }
 
 /* <---------------------works----------------------> */
@@ -175,6 +220,64 @@ header {
   background-size: cover;
 }
 
+/* <---------------------(each work common styles)----------------------> */
+
+.work-image {
+  object-fit: cover;
+}
+
+.work-title-vline {
+  display: inline-block;
+  margin-left: 10vw;
+  margin-top: 95vh;
+  width: 3px;
+  height: 7rem;
+  background-color: #E8E8E8;
+}
+
+.work-text {
+  display: inline-block;
+  margin-left: 2vw;
+  margin-top: 95vh;
+}
+
+.work-text h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.work-text h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.work-overview {
+  margin-top: 20vh;
+  margin-left: 12vw;
+}
+
+.work-overview p {
+  font-size: 1.7rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.work-image-1, .work-image-2 {
+  display: inline-block;
+  height: 35vh;
+  width: 38vw;
+  margin: 5vw;
+}
+
+
+/* <---------------------work_7----------------------> */
+
+
+
 /* <---------------------about----------------------> */
 
 .about-container {
@@ -188,6 +291,14 @@ header {
   line-height: 3rem;
 }
 
+@media screen and (max-width: 500px) {
+  .about-container {
+    width: 60vw;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    left: 51%;
+  }
+}
 /* <---------------------contact----------------------> */
 
 .contact-container {
