@@ -78,14 +78,14 @@ header {
 }
 
 @media screen and (max-width: 500px) {
-  .image-wrapper {
+  /* .image-wrapper {
     width: 78vw;
     position: static;
     margin: auto;
     margin-top: 7vh;
     transform: translate(0%, 0%);
     display: block;
-  }
+  } */
 
   .header-menu-container {
     display: none;
@@ -293,7 +293,7 @@ header {
 
 .work-overview p {
   font-size: 1.7rem;
-  line-height: 2.3rem;
+  line-height: 2.5rem;
 }
 
 .bold {
@@ -315,32 +315,40 @@ header {
 .work-descr-detail-container {
   width: 50vw;
   margin: 8vh auto;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.3rem;
 }
 
 .work-image-2 {
   display: block;
   width: 85vw;
   height: 70vh;
-  margin: auto;
+  margin: 2vh auto;
 }
 
 .work-image-dual-vert {
   width: 77vw;
-  margin: auto;
+  margin: 6vh auto;
 }
 
 .work-image-3 {
   display: inline-block;
   width: 32vw;
   height: 46vw;
-  margin: 3vw;
+  margin: 0 3vw;
 }
 
 @media screen and (max-width: 500px) {
   .work-title-vline, .work-text {
-    margin-top: 10vh;
+    margin: 0 3vw 0 0;
+  }
+
+  .work-title-box {
+    margin-top: 5vh;
+    width: 100%;
+    text-align: center;
+    height: 10vh;
   }
 
   .work-text h3 {
@@ -369,12 +377,25 @@ header {
 
   .work-image-dual-vert {
     width: 82vw;
+    margin: 2vh auto;
   }
 
   .work-image-3 {
     width: 36vw;
     height: 54vw;
     margin: 2vw;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .work-image-top {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70vh;
+    width: 84vw;
+
   }
 }
 
@@ -422,4 +443,19 @@ header {
 
 .fab:hover, .far:hover {
   color: black;
+}
+
+/* <---------------------footer----------------------> */
+footer {
+  height: 5rem;
+  width: 100%;
+  color: #e8e8e8;
+  text-align: center;
+  line-height: 5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.sticky-footer {
+  position: inherit;
 }
