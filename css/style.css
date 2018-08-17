@@ -80,6 +80,11 @@ header {
 @media screen and (max-width: 500px) {
   .image-wrapper {
     width: 78vw;
+    position: static;
+    margin: auto;
+    margin-top: 7vh;
+    transform: translate(0%, 0%);
+    display: block;
   }
 
   .header-menu-container {
@@ -121,8 +126,8 @@ header {
     position: absolute;
     top: 8vh;
     right: 9vw;
-    font-size: 1.5rem;
-    line-height: 2.3rem;
+    font-size: 2rem;
+    line-height: 3rem;
     z-index: 100;
     text-align: right;
   }
@@ -283,23 +288,94 @@ header {
 }
 
 .work-overview {
-  margin-top: 20vh;
-  margin-left: 12vw;
+  margin: 20vh 12vw 8vh 12vw;
 }
 
 .work-overview p {
   font-size: 1.7rem;
+  line-height: 2.3rem;
 }
 
 .bold {
   font-weight: 600;
 }
 
-.work-image-1, .work-image-2 {
+.work-image-dual {
+  width: 85vw;
+  margin: auto;
+}
+
+.work-image-1 {
   display: inline-block;
-  height: 35vh;
+  height: 36vh;
   width: 38vw;
-  margin: 5vw;
+  margin: 2vw;
+}
+
+.work-descr-detail-container {
+  width: 50vw;
+  margin: 8vh auto;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.work-image-2 {
+  display: block;
+  width: 85vw;
+  height: 70vh;
+  margin: auto;
+}
+
+.work-image-dual-vert {
+  width: 77vw;
+  margin: auto;
+}
+
+.work-image-3 {
+  display: inline-block;
+  width: 32vw;
+  height: 46vw;
+  margin: 3vw;
+}
+
+@media screen and (max-width: 500px) {
+  .work-title-vline, .work-text {
+    margin-top: 10vh;
+  }
+
+  .work-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .work-overview p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .work-image-1 {
+    height: 30vh;
+    width: 100%;
+    margin: 2vh 0;
+  }
+
+  .work-descr-detail-container {
+    width: 70vw;
+  }
+
+  .work-image-2 {
+    height: 32vh;
+    margin: 2vh auto;
+  }
+
+  .work-image-dual-vert {
+    width: 82vw;
+  }
+
+  .work-image-3 {
+    width: 36vw;
+    height: 54vw;
+    margin: 2vw;
+  }
 }
 
 
