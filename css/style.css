@@ -38,8 +38,8 @@ header {
 .header-menu-container {
   display: inline-block;
   float: right;
-  padding-right: 5rem;
-  padding-top: 2.5rem;
+  padding-right: 8vw;
+  padding-top: 2.5vh;
 }
 
 .header-menu {
