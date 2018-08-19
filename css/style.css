@@ -75,6 +75,15 @@ header {
   width: 84vw;
 }
 
+h4 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  text-align: center;
+}
+
 .index-image {
   background-image: url(L_dive.gif);
   background-size: cover;
@@ -125,14 +134,14 @@ header {
   .cross {
     font-size: 2rem;
     position: absolute;
-    top: 5vh;
+    top: 6vh;
     left: 85vw;
     color: black;
   }
 
   .mobile-menu {
     position: absolute;
-    top: 8vh;
+    top: 9vh;
     right: 9vw;
     font-size: 2rem;
     line-height: 3rem;
@@ -258,7 +267,7 @@ header {
   background-size: cover;
 }
 
-#book {
+#gradworkc {
   background-image: url(book.jpg);
   background-size: cover;
 }
@@ -303,6 +312,7 @@ header {
 .work-overview p {
   font-size: 1.7rem;
   line-height: 2.5rem;
+  width: 50vw;
 }
 
 .bold {
@@ -353,24 +363,31 @@ header {
     padding-top: 80px;
   }
 
-  .work-title-vline, .work-text {
-    margin: 0 3vw 0 0;
+  .work-title-vline {
+    margin: 0 3vw 0 10%;
+  }
+
+  .work-text {
+    margin-right: 10%;
+    margin-top: 0;
+    width: 70%;
   }
 
   .work-title-box {
     margin-top: 5vh;
     width: 100%;
-    text-align: center;
     height: 10vh;
   }
 
   .work-text h3 {
     font-size: 1.6rem;
+    line-height: 2.3rem;
   }
 
   .work-overview p {
     font-size: 1.3rem;
     line-height: 2rem;
+    width: 100%;
   }
 
   .work-image-1 {
@@ -413,10 +430,30 @@ header {
 }
 
 
-/* <---------------------work_7----------------------> */
+/* <---------------------work_3----------------------> */
 
+.work_3_vline {
+  height: 9rem;
+}
 
+.work-image-4 {
+  width: 20vw;
+  height: 18vh;
+  display: inline-block;
+  margin: 2vh 0.5vw;
+}
 
+@media screen and (max-width: 500px) {
+  .work-image-4 {
+    width: 40vw;
+    height: 14vh;
+    margin: 2vh 1vw;
+  }
+}
+
+.work-image-2-small {
+  transform: scale(0.7);
+}
 /* <---------------------about----------------------> */
 
 .about-container {
