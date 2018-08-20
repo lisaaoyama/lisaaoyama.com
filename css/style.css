@@ -468,7 +468,12 @@ h4 {
 
 .jimmio-img {
   height: inherit;
-  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .jimmio-img {
+    width: 100%;
+  }
 }
 
 /* <---------------------work_3----------------------> */
