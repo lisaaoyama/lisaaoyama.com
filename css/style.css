@@ -319,6 +319,10 @@ h4 {
   font-weight: 600;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .work-image-dual {
   width: 85vw;
   margin: auto;
@@ -346,6 +350,10 @@ h4 {
   margin: 2vh auto;
 }
 
+.work-image-2.thin {
+  height: 15vh;
+}
+
 .work-image-dual-vert {
   width: 77vw;
   margin: 6vh auto;
@@ -356,6 +364,7 @@ h4 {
   width: 32vw;
   height: 46vw;
   margin: 0 3vw;
+  vertical-align: top;
 }
 
 @media screen and (max-width: 500px) {
@@ -425,10 +434,34 @@ h4 {
     transform: translate(-50%, -50%);
     height: 70vh;
     width: 84vw;
-
   }
+
+  .work-image-2.small {
+    transform: scale(0.7);
+  }
+
 }
 
+/* <---------------------work_2----------------------> */
+
+.work-image-4.jimmio {
+  object-fit: contain;
+}
+
+.jimmio-eg {
+  height: 40%;
+  width: 100%;
+  margin-top: 0;
+}
+
+.jimmio-eg-descr {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.jimmio-img {
+  height: inherit;
+}
 
 /* <---------------------work_3----------------------> */
 
@@ -438,7 +471,7 @@ h4 {
 
 .work-image-4 {
   width: 20vw;
-  height: 18vh;
+  height: 20vh;
   display: inline-block;
   margin: 2vh 0.5vw;
 }
@@ -451,9 +484,6 @@ h4 {
   }
 }
 
-.work-image-2-small {
-  transform: scale(0.7);
-}
 /* <---------------------about----------------------> */
 
 .about-container {
