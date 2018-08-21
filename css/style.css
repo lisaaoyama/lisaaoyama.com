@@ -367,6 +367,13 @@ h4 {
   vertical-align: top;
 }
 
+.conservatory-video {
+  width: 85vw;
+  padding:56.25% 0 0 0;
+  position:relative;
+  margin: auto;
+}
+
 @media screen and (max-width: 500px) {
   .work-image-top {
     padding-top: 80px;
@@ -521,6 +528,11 @@ h4 {
 
 }
 
+/* <---------------------work_6----------------------> */
+
+.sq {
+  width: 70vw;
+}
 
 /* <---------------------about----------------------> */
 
