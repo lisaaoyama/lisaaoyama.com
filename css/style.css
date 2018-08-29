@@ -375,7 +375,7 @@ h4 {
   vertical-align: top;
 }
 
-.conservatory-video {
+.conservatory-video, .study-video {
   width: 85vw;
   padding:56.25% 0 0 0;
   position:relative;
