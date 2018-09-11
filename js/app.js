@@ -13,9 +13,14 @@ $(function() {
   // )
 
 
-  $("#page").removeClass("fade-out");
+  // $("#page").removeClass("fade-out");
 
   // $(".page").fadeIn();
+
+  $('.work-image').addClass("hidden").viewportChecker({
+    classToAdd: 'visible animated fadeIn',
+    offset: 100
+  });
 
   $(".cross, .mobile-menu").hide();
   $( ".hamburger" ).click(function() {

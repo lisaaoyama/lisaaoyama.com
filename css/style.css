@@ -12,7 +12,14 @@ a {
     color: inherit;
 }
 
-#page {
+.hidden {
+  opacity:0;
+}
+.visible {
+  opacity:1;
+}
+
+/* #page {
   opacity: 1;
   transition: 0.5s;
 }
@@ -20,7 +27,7 @@ a {
 #page.fade-out {
   opacity: 0;
   transition: none;
-}
+} */
 
 header {
   height: 8rem;
@@ -126,7 +133,7 @@ h4 {
     font-size: 2rem;
     position: absolute;
     top: 4rem;
-    right: 9vw;
+    right: 8vw;
     color: #b5b5b5;
     transition: 0.3s;
   }
