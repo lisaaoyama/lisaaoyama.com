@@ -167,6 +167,20 @@ h4 {
 
 }
 
+@media screen and (min-width: 501px) {
+  .hamburger {
+    visibility: hidden;
+  }
+
+  .cross {
+    visibility: hidden;
+  }
+
+  .mobile-menu {
+    visibility: hidden;
+  }
+}
+
 /* <---------------------works----------------------> */
 
 .works-container {
@@ -175,7 +189,7 @@ h4 {
   margin: auto;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 501px) {
   .works-container {
     position: fixed;
     top: 55%;
@@ -477,7 +491,7 @@ h4 {
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 501px) {
   .work-image-top {
     position: absolute;
     top: 53%;
