@@ -285,7 +285,7 @@ h4 {
 }
 
 #dive {
-  background-image: url(../images/1_dive_1.jpg);
+  background-image: url(dive.gif);
   background-size: cover;
   background-position: center;
 }
@@ -327,7 +327,7 @@ h4 {
 }
 
 #perceivingp {
-  background-image: url(../images/5_p_6.jpg);
+  background-image: url(p.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -453,10 +453,6 @@ h4 {
 
   .ql-vline {
     height: 12rem;
-  }
-
-  .cl-vline {
-    height: 16rem;
   }
 
   .work-text {
